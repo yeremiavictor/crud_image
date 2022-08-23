@@ -1,0 +1,26 @@
+{
+  "name": "backendcrud",
+  "version": "1.0.0",
+  "description": "backend for crud + image upload",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backend",
+    "crud",
+    "node",
+    "js",
+    "image"
+  ],
+  "author": "yeremiavictor",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.4"
+  }
+}
