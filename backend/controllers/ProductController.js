@@ -11,6 +11,19 @@ export const getProducts = async(req, res)=>{
     }
 }
 
+export const getProductById = async(req,res)=>{
+    try{
+        const response = await Product.findOne({
+            where:{
+                id: req.params.id
+            }
+        })
+        res.json(response)
+    }catch (err){
+        console.log(err.message)
+    }
+}
+
 export const saveProduct = (req,res)=>{
     if(req.files === null) return res.status(400).json({msg:"No File Uploaded"});
     const name = req.body.title;
